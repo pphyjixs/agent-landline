@@ -1,0 +1,46 @@
+# 本机配置、腾讯云密钥与环境变量；示例配置保留在版本库中。
+/config.json
+/tencent-asr.local.json
+*.local.json
+/.env
+/.env.*
+!/.env.example
+!/.env.*.example
+
+# 通话文字、扩展令牌、日志、生成音频、性能测试和配置备份。
+/data/
+/outputs/
+/recordings/
+/logs/
+/backups/
+/cache/
+*.log
+
+# Python 环境、字节码及测试工具缓存。
+/.venv/
+/.venv-*/
+/venv/
+/env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+/htmlcov/
+/coverage.xml
+
+# 本机安装的 Node 依赖；vendor/ 下已固定版本的源码和许可证保留。
+node_modules/
+
+# 编辑器临时文件和系统文件。
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
